@@ -16,9 +16,45 @@
 <p>cd cmsimde</p>
 <p>git checkout 1c3aeec</p>
 <p>然後 acp "add w3 page"</p>
-<h2>W13</h2>
-<p>因應covid-19，W13起改成遠距離線上教學。</p>
-<h2>SSH設定</h2>
+<h2>WCM倉儲</h2>
+<p>搜尋<span style="color: #0000ff;"> </span><span><span style="color: #0000ff;">fossil scm</span> 接著 Download</span></p>
+<p><span><img alt="" height="241" src="/images/W2.png" width="800"/></span></p>
+<p><span>注意：</span><span></span><span style="background-color: #ffff00;">須將此檔案存在y槽</span></p>
+<p><span><img alt="" height="458" src="/images/W3.png" width="770"/></span></p>
+<p><span></span>建立一個資料夾為<span><span> </span><span style="color: #0000ff;">fossil</span></span></p>
+<p>接這輸入<span>:</span> <span style="color: #0000ff;">fossil clone https://學號@fossil.kmol.info/u/學號 學號.fossil</span></p>
+<p><span><img alt="" height="173" src="/images/w5.png" width="800"/></span></p>
+<p>y槽/tmp/fossil 會出現<span> </span><span style="color: #0000ff;">學號.fossil</span></p>
+<p><span><img alt="" height="351" src="/images/W5-2.png" width="800"/></span></p>
+<p><span></span>需要再建立一個<span style="color: #0000ff;">wd</span>的資料夾</p>
+<p>在wd底下再建立一個<span style="color: #0000ff;">自己學號</span>的資料夾</p>
+<p>為了開啟檔案輸入：<span style="color: #0000ff;">fossil open ./../../學號.fossil</span></p>
+<p><span>是為了跟遠端連接有一個壓縮檔案紀錄版本</span></p>
+<p><img alt="" height="387" src="/images/W4-2.png" width="1125"/></p>
+<p>y槽/tmp/fossil/wd/學號資料夾 會出現<span style="color: #0000ff;">_FOSSIL_</span></p>
+<p><img alt="" height="325" src="/images/W4-5.png" width="800"/></p>
+<p>註：出現&lt;unnamed&gt;原因是沒在WCM測試倉儲中更改名稱</p>
+<p><img alt="" height="237" src="/images/W4-4.png" width="800"/></p>
+<p></p>
+<p><img alt="" height="270" src="/images/W4-3.png" width="800"/></p>
+<p></p>
+<p>接著在<span style="color: #000000;">wd</span>的目錄下<span style="color: #0000ff;">clone github</span>帳號</p>
+<p><span>輸入指令：</span><span style="color: #0000ff;">git clone --recurse-submodules https://github.com/學號/倉儲名稱.git</span></p>
+<p><img alt="" height="463" src="/images/W7.png" width="800"/></p>
+<p>接著把整個<span>wcm2021</span>內的資料全部複製到<span>學號資料夾</span>內</p>
+<p>注意：<span style="background-color: #ffff00;">須注意是否有重疊檔案，避免被覆改掉</span></p>
+<p>為了新增所有資料</p>
+<p><span style="color: #0000ff;">cd 學號</span></p>
+<p><span style="color: #0000ff;">fossil add .</span></p>
+<p><img alt="" height="482" src="/images/W8.png" width="900"/></p>
+<p>註：<span style="background-color: #ffff00;">假如中間改版有刪除檔案或目錄，需改成 <span style="color: #0000ff;">fossil addremove</span></span></p>
+<p><span style="color: #0000ff;">fossil add . </span>是沒有刪除資料所需要打的</p>
+<p><span style="color: #0000ff;">fossil commit -m "initial add"</span><span> </span>提交資料</p>
+<p><span style="color: #0000ff;">a</span><span> </span><span>為全部推送</span></p>
+<p><img alt="" height="473" src="/images/W9.png" width="900"/></p>
+<p><img alt="" height="427" src="/images/w10.png" width="900"/></p>
+<p>完成同步</p>
+<p></p><h2>SSH設定</h2>
 <p>設定SSH</p>
 <p><img alt="" height="435" src="/images/2.png" width="1056"/></p>
 <p>產生Key用puttygen.exe</p>
@@ -98,42 +134,7 @@
 <p><br/><span><img alt="" height="667" src="/images/e.png" width="561"/></span><br/><br/></p>
 <p></p>
 <h1>筆記</h1>
-<h2>WCM測試倉儲</h2>
-<p>搜尋 <span style="color: #0000ff;">fossil scm <span style="color: #000000;">接著 Downloa</span></span></p>
-<p><span style="color: #000000; background-color: #ffff00;"><img alt="" height="241" src="/images/W2.png" width="800"/></span></p>
-<p><span style="color: #000000;">注意：</span><span style="color: #000000;"></span><span style="color: #000000; background-color: #ffff00;">須將此檔案存在y槽</span></p>
-<p><span style="color: #000000; background-color: #ffff00;"><img alt="" height="458" src="/images/W3.png" width="770"/></span></p>
-<p><span style="color: #000000; background-color: #ffff00;"></span>建立一個資料夾為<span style="color: #0000ff;"> fossil</span></p>
-<p>接這輸入<span style="color: #000000;">:</span> <span style="color: #0000ff;">fossil clone https://學號@fossil.kmol.info/u/學號 學號.fossil</span></p>
-<p><span style="color: #0000ff;"><img alt="" height="173" src="/images/w5.png" width="800"/></span></p>
-<p>y槽/tmp/fossil 會出現 <span style="color: #0000ff;">學號.fossil</span></p>
-<p><span style="color: #0000ff;"><img alt="" height="351" src="/images/W5-2.png" width="800"/></span></p>
-<p><span style="color: #000000;"></span>需要再建立一個<span style="color: #0000ff;">wd</span>的資料夾</p>
-<p>在wd底下再建立一個<span style="color: #0000ff;">自己學號</span>的資料夾</p>
-<p>為了開啟檔案輸入：<span style="color: #0000ff;">fossil open ./../../學號.fossil</span></p>
-<p><span style="color: #000000;">是為了跟遠端連接有一個壓縮檔案紀錄版本</span></p>
-<p><img alt="" height="387" src="/images/W4-2.png" width="1125"/></p>
-<p>依照資料夾順序打開僅會出現下圖的檔案</p>
-<p><img alt="" height="325" src="/images/W4-5.png" width="800"/></p>
-<p>註：出現&lt;unnamed&gt;原因是沒在WCM測試倉儲中更改名稱</p>
-<p><img alt="" height="237" src="/images/W4-4.png" width="800"/></p>
-<p><img alt="" height="270" src="/images/W4-3.png" width="800"/></p>
-<p>接著在wd的目錄下clone github帳號</p>
-<p><span style="color: #000000;">輸入指令：</span><span style="color: #0000ff;">git clone --recurse-submodules <a href="https://github.com/學號/倉儲名稱.git">https://github.com/學號/倉儲名稱.git</a> </span></p>
-<p><img alt="" height="463" src="/images/W7.png" width="800"/></p>
-<p>接著把整個<span style="color: #0000ff;">wcm2021</span>內的資料全部複製到<span style="color: #0000ff;">學號資料夾</span>內</p>
-<p>注意：須注意是否有重疊檔案，避免被覆改掉</p>
-<p>為了新增所有資料</p>
-<p><span style="color: #0000ff;">cd 學號</span></p>
-<p><span style="color: #0000ff;">fossil add .</span></p>
-<p><img alt="" height="482" src="/images/W8.png" width="900"/></p>
-<p>註：假如中間改版有刪除檔案或目錄，需改成 <span style="color: #0000ff;">fossil addremove</span></p>
-<p><span style="color: #0000ff;">fossil add .</span> 是沒有刪除資料所需要打的</p>
-<p><span style="color: #0000ff;">fossil commit -m "initial add"</span> 提交資料</p>
-<p><span style="color: #0000ff;">a</span> <span style="color: #000000;">為全部推送</span></p>
-<p><img alt="" height="473" src="/images/W9.png" width="900"/></p>
-<p><img alt="" height="427" src="/images/w10.png" width="900"/></p>
-<p>完成同步</p><h2>更新</h2>
+<h2>更新</h2>
 <p>cd tmp</p>
 <p>cd 08</p>
 <p>cd cmsimde</p>
