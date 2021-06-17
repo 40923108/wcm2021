@@ -135,13 +135,23 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">SSH設定 << <a href='SSH設定.html'>Previous</a> <a href='Robodk.html'>Next</a> >> Robodk<br /><h1>Heroku</h1>
+<p>1.用學校帳號先登錄heroku帳號，並建立一個<span style="color: #0000ff;">a+學號<span style="color: #000000;">的app，即可透過https://a學號.herokuapp.com取得原始內容。</span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;">2.到<span> </span><a href="http://a.kmol.info:88/heroku.7z">http://a.kmol.info:88/heroku.7z</a>下載<span style="background-color: #ffff00;">heroku</span>解開至隨身碟</span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;">3.<span>修改命令搜尋路徑：</span><span> 修改隨身系統的啟動批次檔案，讓 Windows 的命令視窗中可以執行 heroku.exe，（將 heroku.exe 所在目錄位置, 設為 Windows 搜尋路徑之一），再重新啟動start_ipv4 / ipv6.bat</span></span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span>4.測試是執行因此輸入<span style="color: #0000ff;">heroku version</span> 若回應所使用的版本表示上述路徑設定已經成功</span></span></span></p>
+<p>5.設定heroku代理主機 <span>在 y:\home_ipv6 下的 .giconfig 中,  以 git config --global http.proxy <span style="color: #0000ff;">"http://your_proxy:port"</span> 進行設定</span></p>
+<p><span><img alt="" height="221" src="./../images/hhhhh.png" width="900"/></span></p>
+<p><span>6.設定同步藉由藉由 git remote add (Heroku 指令為 <span style="color: #0000ff;">heroku git:remote -a heroku_倉儲_名稱</span>, 之後只要在 heroku login 狀態下, 可以直接利用 git push) 在近端設定一個連線到 Heroku 倉儲的代號</span></p>
+<p><img alt="" height="471" src="./../images/hh.png" width="900"/></p>
+<p><img alt="" height="472" src="./../images/hhh.png" width="900"/></p>
+<p></p>
 <p>重啟小黑窗</p>
 <p>打cd tmp</p>
 <p>cd 08(倉儲名稱)</p>
-<p>heroku login-1</p>
+<p><span style="color: #0000ff;">heroku login-1</span></p>
 <p>接著打上herohu帳號密碼</p>
-<p>heroku login -a a40923108(名稱)</p>
-<p>最後git push heoku</p>
+<p><span style="color: #0000ff;">heroku login -a a40923108(名稱)</span></p>
+<p>最後<span style="color: #0000ff;">git push heoku</span></p>
 <p></p>
 <p><img alt="" height="641" src="./../images/H1.png" width="1210"/></p>
 <p><img alt="" height="625" src="./../images/H3.png" width="1201"/></p>
