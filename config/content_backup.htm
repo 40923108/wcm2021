@@ -3,7 +3,8 @@
 <p>Heroku：<a href="https://dashboard.heroku.com/apps/a40923108">https://dashboard.heroku.com/apps/a40923108</a></p>
 <p>             <a href="https://a40923108.herokuapp.com/content/index.html">https://a40923108.herokuapp.com/content/index.html</a></p>
 <p>Fossil：<a href="https://fossil.kmol.info/u/40923108/home">https://fossil.kmol.info/u/40923108/home</a></p>
-<p>123</p>
+<p>          <a href="https://fossil.kmol.info/u/40923108/doc/trunk/content/">https://fossil.kmol.info/u/40923108/doc/trunk/content/</a></p>
+<p></p>
 <h2>W1</h2>
 <p>This is <a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p>
 <p>目前的 cmsimde 在編輯器下方新增一個 csave 按鈕, 意即 collabrative save, 當動態網際管理系統在多人同時維護登入維護網頁內容時, 編輯各頁面時段, 該頁面可能已經改版, 因此使用 csave 按鈕存檔時, 會導入當下最新的該頁面內容, 並試圖與編輯中的頁面內容進行合併.</p>
@@ -153,11 +154,25 @@
 <p></p>
 <h1>筆記</h1>
 <h2>語法</h2>
-<p></p>
+<p>啟動9443方法：</p>
+<p><span style="color: #0000ff;">cd tmp</span></p>
+<p><span style="color: #0000ff;">cd 08</span>(倉儲資料夾名稱)</p>
+<p><span style="color: #0000ff;">cd cmsimde </span></p>
+<p><span style="color: #0000ff;">python wsgi.py</span></p>
+<p>若有更新cmsimde即可在第二步驟後打<span style="color: #0000ff;">cms</span></p>
+<p><span style="color: #000000;">推送方式：</span></p>
+<p><span style="color: #0000ff;">ctrl c</span></p>
+<p><span style="color: #0000ff;">cd ..</span></p>
+<p><span style="color: #0000ff;">git add .</span></p>
+<p><span style="color: #0000ff;">git commit -m "initial add"</span></p>
+<p><span style="color: #0000ff;">git push</span></p>
+<p>若未設定ssh者則須打上倉儲帳號及密碼</p>
+<p><span>每一個以 cmstemplate 為 template 的倉儲, 其根目錄都帶有：</span></p>
 <p>1.<span style="background-color: #ffff00;">init.py</span> - 其中的 site_title, ip 與 port 可以讓使用者自行修改, site_title 是網站標題, ip 為動態網站啟動時所使用的網路位址, 可設為內部或外部 IPv4 (IPv6), port 則是動態網站啟動時所佔用的埠號.</p>
 <p>2.<span style="background-color: #ffff00;">http-server.py</span><span> - 執行後會使用內建的 localhost 與 port 8444 伺服 content 子目錄中的 CMSiMDE 靜態網頁</span></p>
 <p><span>3.<span style="background-color: #ffff00;">cms.bat</span><span><span style="background-color: #ffff00;"> </span>- 讓使用者執行動態網站用的批次檔案</span></span></p>
-<p><span><span>4<span style="background-color: #ffff00;">.acp.bat</span> <span>- 若使用者已經將倉儲設為 ssh 連線，且提供遠端與近端的認證模式，則可以在執行此批次指令之後加上提交字串，即可執行 git add，git commit -m "提交訊息"，以及 git push 等三個指令.</span></span></span></p><h2>更新</h2>
+<p><span><span>4<span style="background-color: #ffff00;">.acp.bat</span> <span>- 若使用者已經將倉儲設為 ssh 連線，且提供遠端與近端的認證模式，則可以在執行此批次指令之後加上提交字串，即可執行 git add，git commit -m "提交訊息"，以及 git push 等三個指令.</span></span></span></p>
+<h2>更新</h2>
 <p>cd tmp</p>
 <p>cd 08</p>
 <p>cd cmsimde</p>
